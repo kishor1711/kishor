@@ -1,0 +1,58 @@
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+      <td mat-cell *matCellDef="let element;let index = index">
+        <editable (update)="updateField(index, 'title')">
+          <ng-template viewMode>
+            {{element.title}}
+          </ng-template>
+          <!-- <ng-template editMode>
+            <input [formControl]="getControl(index, 'title')" focusable editableOnEnter>
+          </ng-template> -->
+          <ng-template editMode>
+            <mat-form-field class="example-full-width">
+              <input matInput [formControl]="getControl(index, 'title')">
+              <!-- <mat-error *ngIf="getControl(index, 'title').hasError('required')">
+                Field is <strong>required</strong>
+              </mat-error> -->
+            </mat-form-field>
+            <!-- <input  [formControl]="getControl(index, 'name')" focusable editableOnEnter> -->
+          </ng-template>
+
+        </editable>
+      </td>
+    </ng-container>
+
+
+
+    <!-- Category Column -->
+    <ng-container matColumnDef="category">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
+      <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+    </ng-container>
+
+    <!-- Writer Column -->
+    <ng-container matColumnDef="writer">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Writer </th>
+      <td mat-cell *matCellDef="let element"> {{element.writer}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+      <td mat-cell *matCellDef="let element"> <button class="btn btn-primary" (click)="checkMe(element.action)">
+          {{element.action}}</button> </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

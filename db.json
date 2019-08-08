@@ -1,0 +1,120 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Kishor",
+      "contactPreference": "phone",
+      "email": "kishorakolkar11@dell.com",
+      "phone": "7218168005",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYear": "10",
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "Java",
+          "experienceInYear": "20",
+          "proficiency": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fullName": "Priyanka",
+      "contactPreference": "phone",
+      "email": "priyankasangle11@gmail.com",
+      "phone": "7387448431",
+      "skills": [
+        {
+          "skillName": "SEO",
+          "experienceInYear": "2.5",
+          "proficiency": "advanced"
+        },
+        {
+          "skillName": "Java",
+          "experienceInYear": "2.5",
+          "proficiency": "beginner"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fullName": "aaaaa",
+      "contactPreference": "phone",
+      "email": "psakolkar@dell.com",
+      "phone": "9049805675",
+      "skills": [
+        {
+          "skillName": "vb.net",
+          "experienceInYear": "12",
+          "proficiency": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "fullName": "kishor ak",
+      "contactPreference": "phone",
+      "email": "kishorakolkar11@dell.com",
+      "phone": "7218168005",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYear": "4.5",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "Java",
+          "experienceInYear": "2.5",
+          "proficiency": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "fullName": "ab",
+      "contactPreference": "phone",
+      "email": "kishorakolkar11@dell.com",
+      "phone": "2132353",
+      "skills": [
+        {
+          "skillName": "aasasasa",
+          "experienceInYear": "40",
+          "proficiency": "advanced"
+        },
+        {
+          "skillName": "Java",
+          "experienceInYear": "12",
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "sdfsdf",
+          "experienceInYear": "sasadd",
+          "proficiency": "beginner"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "fullName": "kishor ako",
+      "contactPreference": "phone",
+      "email": "asdsdasd@dell.com",
+      "phone": "7218168005",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYear": "40",
+          "proficiency": "intermediate"
+        }
+      ]
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "usesrname": "kishor",
+      "password": "kish123"
+    }
+  ]
+}

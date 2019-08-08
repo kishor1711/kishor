@@ -1,0 +1,9 @@
+hr{
+    border: 1px solid silver
+}
+
+
+.panel-heading {
+    padding: 10px 15px;
+    background: burlywood;
+}
